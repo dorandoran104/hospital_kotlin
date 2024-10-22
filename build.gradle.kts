@@ -38,6 +38,8 @@ dependencies {
 	testImplementation("org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation("org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16")
+	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.0")
+
 }
 
 kotlin {
