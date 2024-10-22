@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="HospitalMapper">
+    <insert id="insert" parameterType="java.util.ArrayList">
+        INSERT INTO hospital(
+            rnum
+            ,hpid
+            ,dutyName
+            ,dutyAddr
+            ,dutyDiv
+            ,dutyDivNam
+            ,dutyEmcls
+            ,dutyEmclsName
+            ,dutyEryn
+            ,dutyEtc
+            ,dutyMapimg
+            ,dutyTel1
+            ,dutyTel3
+            ,dutyTime1c
+            ,dutyTime2c
+            ,dutyTime3c
+            ,dutyTime4c
+            ,dutyTime5c
+            ,dutyTime6c
+            ,dutyTime7c
+            ,dutyTime8c
+            ,dutyTime1s
+            ,dutyTime2s
+            ,dutyTime3s
+            ,dutyTime4s
+            ,dutyTime5s
+            ,dutyTime6s
+            ,dutyTime7s
+            ,dutyTime8s
+            ,postCdn1
+            ,postCdn2
+            ,wgs84Lon
+            ,wgs84Lat
+            ,dutyInf
+        )VALUES
+        <foreach collection="list" item="list" separator=",">
+            (
+                #{list.rnum}
+                ,#{list.hpid}
+                ,#{list.dutyName}
+                ,#{list.dutyAddr}
+                ,#{list.dutyDiv}
+                ,#{list.dutyDivNam}
+                ,#{list.dutyEmcls}
+                ,#{list.dutyEmclsName}
+                ,#{list.dutyEryn}
+                ,#{list.dutyEtc}
+                ,#{list.dutyMapimg}
+                ,#{list.dutyTel1}
+                ,#{list.dutyTel3}
+                ,#{list.dutyTime1c}
+                ,#{list.dutyTime2c}
+                ,#{list.dutyTime3c}
+                ,#{list.dutyTime4c}
+                ,#{list.dutyTime5c}
+                ,#{list.dutyTime6c}
+                ,#{list.dutyTime7c}
+                ,#{list.dutyTime8c}
+                ,#{list.dutyTime1s}
+                ,#{list.dutyTime2s}
+                ,#{list.dutyTime3s}
+                ,#{list.dutyTime4s}
+                ,#{list.dutyTime5s}
+                ,#{list.dutyTime6s}
+                ,#{list.dutyTime7s}
+                ,#{list.dutyTime8s}
+                ,#{list.postCdn1}
+                ,#{list.postCdn2}
+                ,#{list.wgs84Lon}
+                ,#{list.wgs84Lat}
+                ,#{list.dutyInf}
+            )
+        </foreach>
+
+    </insert>
+
+</mapper>
